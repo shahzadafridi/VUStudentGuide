@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaleem.aboutaustrailia.ActivitySydneyEvents">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Home"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/sanomat_medium"
+                android:background="@drawable/login_button"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:onClick="btnHomeClick"/>
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:background="#fff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Cities"
+                android:fontFamily="@font/sanomat_medium"
+                android:background="@drawable/login_button"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:onClick="btnCitiesClick"/>
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:background="#fff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Events"
+                android:fontFamily="@font/sanomat_medium"
+                android:background="@drawable/login_button"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:onClick="btnEvent"/>
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:background="#fff" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Exit"
+                android:fontFamily="@font/sanomat_medium"
+                android:background="@drawable/login_button"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:onClick="btnExit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imSydneyDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/vivid"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/tvSydneyDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sanomat_regular"
+                    android:text="Vivid Sydney is an annual festival of light, music and ideas, held in Sydney. It includes outdoor immersive light installations and projections, performances by local and international musicians, and an ideas exchange forum featuring public talks and debates with leading creative thinkers."
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#fff"/>
+                <TextView
+                    android:id="@+id/tvSydneyT"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/black_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Begins:	  24 May 2019\nEnds:   	15 June 2019"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vivid Sydney"
+                    android:onClick="btnVivid"
+                    android:fontFamily="@font/sanomat_medium"
+                    android:background="@drawable/event_button"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="1dp"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="New Year Eve"
+                    android:onClick="btnNewEve"
+                    android:fontFamily="@font/sanomat_medium"
+                    android:background="@drawable/event_button"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
