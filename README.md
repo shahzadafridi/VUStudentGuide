@@ -14,7 +14,6 @@ VU Student Guide is an android application. It's an assignment type application.
  - Email:     shahzadahmadafridi@gmail.com 
  - StackOverFlow: https://stackoverflow.com/users/6672577/opriday 
  - LinkedIn: https://www.linkedin.com/in/imshahzadafridi
- - Project Link: https://github.com/shahzadafridi/HomeRemedies
 
 ## License
 
